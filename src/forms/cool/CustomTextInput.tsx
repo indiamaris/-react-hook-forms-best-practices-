@@ -1,18 +1,8 @@
-import { type UseFormRegister } from 'react-hook-form';
+import {
+  InputText,
+  type InputProps,
+} from '../../components/InputText/InputText';
 
 export const CustomTextInput = ({ label, register, required }: InputProps) => {
-  return (
-    <>
-      <label>{label}</label>
-      <input {...register(label, { required })} />
-    </>
-  );
-};
-
-type FormData = Record<string, unknown>;
-
-export type InputProps = {
-  label: string;
-  register: UseFormRegister<FormData>;
-  required: boolean;
+  return <InputText label={label} register={register} required={required} />;
 };
