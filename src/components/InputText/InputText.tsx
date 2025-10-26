@@ -1,11 +1,11 @@
 import { type UseFormRegister } from 'react-hook-form';
 import styles from './inputText.module.css';
 
-export const InputText = ({ label, register, required }: InputProps) => {
+export const InputText = <T extends Record<string, unknown>>({ label, register, required }: InputProps<T>) => {
   return (
     <>
       <label className={styles.inputTextLabel}>{label} {required && <span className={styles.inputTextRequired}>*</span>}</label>
-      <input {...register(label, { required })} className={styles.inputTextInput} />
+      <input {...register(label as any, { required })} className={styles.inputTextInput} />
    
     </>
   );
@@ -17,10 +17,8 @@ export const InputText = ({ label, register, required }: InputProps) => {
  * @param required - Whether the input is required
  * @returns A text input component
  */
-type FormData = Record<string, unknown>;
-
-export type InputProps = {
+export type InputProps<T extends Record<string, unknown> = Record<string, unknown>> = {
   label: string;
-  register: UseFormRegister<FormData>;
+  register: UseFormRegister<T>;
   required: boolean;
 };
