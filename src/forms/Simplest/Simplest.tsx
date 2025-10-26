@@ -14,9 +14,15 @@ export const Simplest = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => setFormData(data)
+  
+  const handleClearData = () => {
+    setFormData(null)
+    reset()
+  }
 
 
   return (
@@ -111,8 +117,7 @@ export const Simplest = () => {
         </button>
       </form>
       <div className="dataShow">
-       {formData && <DataShow data={formData} />}
-       {formData && <div className="buttonContainer"><button className={styles.clearButton} onClick={() => setFormData(null)}>Clear</button></div> }
+        {formData && <DataShow data={formData} onClear={handleClearData} />}
       </div>
     </div>
   )
