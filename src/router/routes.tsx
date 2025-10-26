@@ -1,7 +1,8 @@
 import App from '../App';
 import { Simplest } from '../forms/Simplest/Simplest';
+import { AdtiveForm } from '../forms/adctive-form/AdtiveForm';
 import { Cool } from '../forms/cool/Cool';
-import { InteractiveForm } from '../forms/interactive/interactiveForm';
+import { InteractiveForm } from '../forms/interactive/InteractiveForm';
 
 
 export const routes = [
@@ -20,6 +21,11 @@ export const routes = [
       {
         path: '/interactive',
         element: <InteractiveForm />,
+      },
+
+      {
+        path: '/adctive',
+        element: <AdtiveForm />,
       },
 
       {

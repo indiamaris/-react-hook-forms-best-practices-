@@ -14,6 +14,9 @@ export const NavBar = () => {
         <Link to="/interactive" className={styles.navLink}>
           Interactive Form
         </Link>
+        <Link to="/adctive" className={styles.navLink}>
+          Adctive Form
+        </Link>
       </div>
     </nav>
   );
