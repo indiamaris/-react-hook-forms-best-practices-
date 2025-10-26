@@ -19,22 +19,26 @@ export const Cool = () => {
 
       <form onSubmit={handleSubmit(onSubmit)} className={styles.coolForm}>
         <CustomTextInput
-          label="firstName"
+          label="Cool First Name"
+          placeholder="Enter your very cool first name"
           register={register}
           required={true}
         />
         <CustomTextInput
           label="Cool Last Name"
+          placeholder="Enter your very cool last name"
           register={register}
           required={true}
         />
         <CustomTextInput
           label="Cool Email"
+          placeholder="Enter your very cool email"
           register={register}
           required={true}
         />
         <CustomTextInput
           label="Cool Password"
+          placeholder="Enter your very cool password (at least 8 characters)"
           register={register}
           required={true}
         />

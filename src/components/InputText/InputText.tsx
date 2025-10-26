@@ -1,10 +1,12 @@
 import { type UseFormRegister } from 'react-hook-form';
+import styles from './inputText.module.css';
 
 export const InputText = ({ label, register, required }: InputProps) => {
   return (
     <>
-      <label>{label}</label>
-      <input {...register(label, { required })} />
+      <label className={styles.inputTextLabel}>{label} {required && <span className={styles.inputTextRequired}>*</span>}</label>
+      <input {...register(label, { required })} className={styles.inputTextInput} />
+   
     </>
   );
 };
