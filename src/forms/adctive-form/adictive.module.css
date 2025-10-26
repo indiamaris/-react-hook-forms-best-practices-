@@ -1,27 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-.coolFormTitle {
-  color: #93149af8;
-  font-family: Funhouse, serif;
-  font-weight: 600;
+.adctiveFormTitle {
+  color: #ebd71ef8;
   font-size: calc(50px + 5vw);
-  opacity: 0.95;
-  text-align: center;
-  letter-spacing: 5px;
-  font-family: 'Luckiest Guy', cursive;
-  font-weight: 400;
-  font-style: normal;
-  text-shadow: 0 1px 0 hsl(170, 93%, 42%), 0 2px 0 hsl(174, 5%, 75%),
-  0 3px 0 hsl(180, 32%, 53%), 0 4px 0 hsl(174, 5%, 66%),
-  0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%),
-  0 7px 0 hsl(174, 5%, 61%), 0 8px 0 hsl(174, 5%, 60%),
-  0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2),
-  0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2),
-  0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
 }
 
 
-.coolForm {
+.adctiveForm {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -45,7 +34,7 @@
   }
 }
 
-.coolFormSubmitButton {
+.adctiveFormSubmitButton {
   background-color: #9007b2a2;
   color: white;
   border: none;
@@ -65,7 +54,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.coolFormSubmitButton:focus {
+.adctiveFormSubmitButton:focus {
   outline: none;
   border: none;
   border-radius: 0.5rem;
@@ -74,7 +63,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.coolFormInput {
+.adctiveFormInput {
   background-color: #292929;
   color: white;
   border: none;
