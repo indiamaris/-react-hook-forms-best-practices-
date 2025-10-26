@@ -1,6 +1,8 @@
 import App from '../App';
 import { Simplest } from '../forms/Simplest/Simplest';
 import { Cool } from '../forms/cool/Cool';
+import { InteractiveForm } from '../forms/interactive/interactiveForm';
+
 
 export const routes = [
   {
@@ -14,6 +16,10 @@ export const routes = [
       {
         path: '/cool',
         element: <Cool />,
+      },
+      {
+        path: '/interactive',
+        element: <InteractiveForm />,
       },
 
       {

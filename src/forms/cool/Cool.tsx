@@ -25,6 +25,12 @@ export const Cool = () => {
           required={true}
         />
         <CustomTextInput
+          label="Cool First NickName"
+          placeholder="Enter your very cool first nickname"
+          register={register}
+          required={false}
+        />
+        <CustomTextInput
           label="Cool Last Name"
           placeholder="Enter your very cool last name"
           register={register}

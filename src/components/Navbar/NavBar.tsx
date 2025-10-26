@@ -11,6 +11,9 @@ export const NavBar = () => {
         <Link to="/cool" className={styles.navLink}>
           Cool Form
         </Link>
+        <Link to="/interactive" className={styles.navLink}>
+          Interactive Form
+        </Link>
       </div>
     </nav>
   );
