@@ -1,5 +1,5 @@
-import { NavBar } from '../Navbar/NavBar'
-import styles from './shell.module.css'
+import { NavBar } from '../Navbar/NavBar';
+import styles from './shell.module.css';
 
 export const Shell = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -7,9 +7,7 @@ export const Shell = ({ children }: { children: React.ReactNode }) => {
       <div className={styles.navbar}>
         <NavBar />
       </div>
-      <div className={styles.content}>
-        {children}
-      </div>
+      <div className={styles.content}>{children}</div>
     </div>
-  )
-}
+  );
+};

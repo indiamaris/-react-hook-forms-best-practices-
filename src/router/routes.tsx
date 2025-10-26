@@ -1,28 +1,25 @@
-
-import App from "../App";
-import { Simplest } from "../forms/Simplest/Simplest";
-import { Cool } from "../forms/cool/Cool";
+import App from '../App';
+import { Simplest } from '../forms/Simplest/Simplest';
+import { Cool } from '../forms/cool/Cool';
 
 export const routes = [
   {
-    path: "/",
+    path: '/',
     element: <App />,
-        children: [
-          {
-        path: "simplest",
+    children: [
+      {
+        path: 'simplest',
         element: <Simplest />,
-       
       },
       {
-        path: "/cool",
+        path: '/cool',
         element: <Cool />,
       },
 
       {
-        path: "/another",
+        path: '/another',
         element: <div>teste</div>,
-      }
-
+      },
     ],
-  }
-  ]
+  },
+];

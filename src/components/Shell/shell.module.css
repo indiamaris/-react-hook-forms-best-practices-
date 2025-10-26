@@ -1,21 +1,21 @@
 .shell {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 5fr;
-    background-color: var(--bg-primary);
-  }
-  .navbar {
-    grid-column: 1 / 2;
-    color: var(--text-primary);
-    background-color: var(--bg-secondary);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  .content {
-    grid-column: 2 / 5;
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-  }
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 5fr;
+  background-color: var(--bg-primary);
+}
+.navbar {
+  grid-column: 1 / 2;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.content {
+  grid-column: 2 / 5;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}

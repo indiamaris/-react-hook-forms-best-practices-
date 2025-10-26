@@ -1,7 +1,13 @@
-import styles from "./dataShow.module.css"
+import styles from './dataShow.module.css';
 
-export const DataShow = ({ data, onClear }: { data: Record<string, any>, onClear?: () => void }) => {
-  console.log(data)
+export const DataShow = ({
+  data,
+  onClear,
+}: {
+  data: Record<string, unknown>;
+  onClear?: () => void;
+}) => {
+  console.log(data);
 
   return (
     <div>
@@ -19,5 +25,5 @@ export const DataShow = ({ data, onClear }: { data: Record<string, any>, onClear
         </button>
       )}
     </div>
-  )
-}
+  );
+};

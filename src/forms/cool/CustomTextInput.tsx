@@ -1,4 +1,4 @@
-import { type UseFormRegister } from "react-hook-form"
+import { type UseFormRegister } from 'react-hook-form';
 
 export const CustomTextInput = ({ label, register, required }: InputProps) => {
   return (
@@ -6,11 +6,13 @@ export const CustomTextInput = ({ label, register, required }: InputProps) => {
       <label>{label}</label>
       <input {...register(label, { required })} />
     </>
-  )
-}
+  );
+};
+
+type FormData = Record<string, unknown>;
 
 export type InputProps = {
-  label: string
-  register: UseFormRegister<any>
-  required: boolean
-}
+  label: string;
+  register: UseFormRegister<FormData>;
+  required: boolean;
+};

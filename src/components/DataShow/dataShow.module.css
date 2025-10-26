@@ -1,49 +1,48 @@
-.dataShowTitle{
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
+.dataShowTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
 }
 
-.dataShowContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    border: 1px solid var(--border-primary);
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    background-color: var(--bg-elevated);
-    color: var(--text-primary);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out;
+.dataShowContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 .dataShowContainer:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.dataShowItem{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
+.dataShowItem {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
-.clearButton{
-    background-color: var(--accent-error);
-    color: var(--text-primary);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    margin-top: 1rem;
-    width: 100%;
-  }
-  
-  .clearButton:hover {
-    background-color: var(--accent-secondary);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
-  }
-  
+.clearButton {
+  background-color: var(--accent-error);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.clearButton:hover {
+  background-color: var(--accent-secondary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
